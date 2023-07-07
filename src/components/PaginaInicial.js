@@ -1,6 +1,3 @@
-// import { Image } from "react-bootstrap";
-import PaqNavbar from "./PaqNavbar";
-
 const PaginaInicial = () => {
   return (
     <>
