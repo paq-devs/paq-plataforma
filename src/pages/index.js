@@ -1,7 +1,5 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import TodosEducandos from "@/components/TodosEducandos";
-import Container from "react-bootstrap/Container";
 import PaginaInicial from "@/components/PaginaInicial";
 import PaqNavbar from "@/components/PaqNavbar";
 
