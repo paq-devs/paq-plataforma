@@ -32,7 +32,6 @@ const TodosEventos = () => {
             </thead>
             <tbody>
               {todosOsEventos.map((evento) => {
-                console.log(evento);
                 return (
                   <tr key={evento.id}>
                     <td>{evento.nome}</td>

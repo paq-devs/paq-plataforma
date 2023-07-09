@@ -1,9 +1,13 @@
 import readDataService from "@/servicos/gsheets/readDataService";
-import converterGoogleSheetsParaEducandos from "@/servicos/conversores/GSheetsParaEducandos";
+import { converterGSheetsParaEntidade } from "@/servicos/conversores/ConversorGenerico";
 
 const buscarEducandoPorId = async (id) => {
-  const data = await readDataService("Educandos!A:Z");
-  const educandos = converterGoogleSheetsParaEducandos(data);
+  const entidade = "educandos";
+  const data = await readDataService(`${entidade}!A:Z`);
+  const educandos = converterGSheetsParaEntidade({
+    nomeDaEntidade: entidade,
+    dadosBrutos: data,
+  });
   return educandos.find((educando) => educando.id === id.toString());
 };
 
