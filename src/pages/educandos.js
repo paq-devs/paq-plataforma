@@ -3,11 +3,9 @@ import TodosEducandos from "@/components/TodosEducandos";
 
 const Educandos = () => {
   return (
-    <>
-      <PaqNavbar>
-        <TodosEducandos />
-      </PaqNavbar>
-    </>
+    <PaqNavbar>
+      <TodosEducandos />
+    </PaqNavbar>
   );
 };
 
