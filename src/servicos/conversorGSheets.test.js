@@ -1,4 +1,4 @@
-import { formataDadosDaLinhaDoGSheets } from "./ConversorGenerico";
+import { formataDadosDaLinhaDoGSheets } from "./conversorGSheets";
 
 describe("converteParaGSheets", () => {
   describe("quando recebe uma linha do GSheets e uma lista de campos", () => {

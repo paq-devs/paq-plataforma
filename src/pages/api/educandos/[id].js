@@ -1,8 +1,6 @@
-import buscarEducandoPorId from "@/repositorios/EducandosRepositorio";
+import educandoRepositorio from "@/repositorios/educandosRepositorio";
 
 export default async function handler(req, res) {
-
-  buscarEducandoPorId(req.query.id).then((educando) => {
-    res.status(200).json(educando);
-  });
+  const educando = await educandoRepositorio.buscarEducandoPorId(req.query.id);
+  res.status(200).json(educando);
 }

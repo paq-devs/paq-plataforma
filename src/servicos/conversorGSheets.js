@@ -1,4 +1,4 @@
-import { definicoesTabelasGSheets } from "./constants";
+import { definicoesTabelasGSheets } from "../constants/definicoesTabelasGSheets";
 
 const formataDadosDaLinhaDoGSheets = (linhaGSheets, campos) => {
   const output = {};
