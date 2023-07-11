@@ -18,16 +18,14 @@ const Educando = () => {
   }, [router.query.id]);
 
   return (
-    <>
-      <PaqNavbar>
-        <PerfilEducando
-          nome={educando.nomeCompleto}
-          etapa={educando.etapa}
-          trilha={educando.trilha}
-          unidade={educando.unidade}
-        ></PerfilEducando>
-      </PaqNavbar>
-    </>
+    <PaqNavbar>
+      <PerfilEducando
+        nome={educando.nomeCompleto}
+        etapa={educando.etapa}
+        trilha={educando.trilha}
+        unidade={educando.unidade}
+      ></PerfilEducando>
+    </PaqNavbar>
   );
 };
 
